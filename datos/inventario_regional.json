@@ -1,0 +1,41 @@
+{
+    "empresa": "Red-Andina Telecom",
+    "total_equipos": 5,
+    "routers": [
+        {
+            "hostname": "RTR-CORE-HUARAZ",
+            "ip_gestion": "192.168.1.1",
+            "sede": "Huaraz",
+            "modelo": "Cisco 7206VXR",
+            "total_loopbacks": 3
+        },
+        {
+            "hostname": "RTR-SUC-CARAZ",
+            "ip_gestion": "192.168.1.2",
+            "sede": "Caraz",
+            "modelo": "Cisco 7206VXR",
+            "total_loopbacks": 3
+        },
+        {
+            "hostname": "RTR-SUC-CARHUAZ",
+            "ip_gestion": "192.168.1.3",
+            "sede": "Carhuaz",
+            "modelo": "Cisco 7206VXR",
+            "total_loopbacks": 3
+        },
+        {
+            "hostname": "RTR-SUC-YUNGAY",
+            "ip_gestion": "192.168.1.4",
+            "sede": "Yungay",
+            "modelo": "Cisco 7206VXR",
+            "total_loopbacks": 3
+        },
+        {
+            "hostname": "RTR-SUC-CHIMBOTE",
+            "ip_gestion": "192.168.1.5",
+            "sede": "Chimbote",
+            "modelo": "Cisco 7206VXR",
+            "total_loopbacks": 3
+        }
+    ]
+}

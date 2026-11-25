@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventario_redandina>
+    <router>
+        <hostname>RTR-CORE-HUARAZ</hostname>
+        <ip_gestion>192.168.1.1</ip_gestion>
+        <sede>Huaraz</sede>
+        <modelo>Cisco 7206VXR</modelo>
+        <total_loopbacks>3</total_loopbacks>
+    </router>
+    <router>
+        <hostname>RTR-SUC-CARAZ</hostname>
+        <ip_gestion>192.168.1.2</ip_gestion>
+        <sede>Caraz</sede>
+        <modelo>Cisco 7206VXR</modelo>
+        <total_loopbacks>3</total_loopbacks>
+    </router>
+    <router>
+        <hostname>RTR-SUC-CARHUAZ</hostname>
+        <ip_gestion>192.168.1.3</ip_gestion>
+        <sede>Carhuaz</sede>
+        <modelo>Cisco 7206VXR</modelo>
+        <total_loopbacks>3</total_loopbacks>
+    </router>
+    <router>
+        <hostname>RTR-SUC-YUNGAY</hostname>
+        <ip_gestion>192.168.1.4</ip_gestion>
+        <sede>Yungay</sede>
+        <modelo>Cisco 7206VXR</modelo>
+        <total_loopbacks>3</total_loopbacks>
+    </router>
+    <router>
+        <hostname>RTR-SUC-CHIMBOTE</hostname>
+        <ip_gestion>192.168.1.5</ip_gestion>
+        <sede>Chimbote</sede>
+        <modelo>Cisco 7206VXR</modelo>
+        <total_loopbacks>3</total_loopbacks>
+    </router>
+</inventario_redandina>
