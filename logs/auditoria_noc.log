@@ -1,0 +1,6 @@
+[2026-11-25 06:48:34] TRIGGER-1 REPARACION: Loopback20 levantada en RTR-SUC-CARAZ
+[2026-11-25 06:49:04] EXCEPCION CAIDA: Router RTR-SUC-CHIMBOTE (192.168.1.5) inalcanzable -> NetmikoTimeoutException
+[2026-11-25 06:49:27] TRIGGER-2 ALERTA CRITICA OSPF: Solo 3/4 vecinos activos en RTR-CORE-HUARAZ
+[2026-11-25 06:49:51] EXCEPCION CAIDA: Router RTR-SUC-CHIMBOTE (192.168.1.5) inalcanzable -> NetmikoTimeoutException
+[2026-11-25 06:50:12] TRIGGER-2 ALERTA CRITICA OSPF: Solo 3/4 vecinos activos en RTR-CORE-HUARAZ
+[2026-11-25 06:50:37] EXCEPCION CAIDA: Router RTR-SUC-CHIMBOTE (192.168.1.5) inalcanzable -> NetmikoTimeoutException
