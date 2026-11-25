@@ -22,7 +22,7 @@ for r in routers:
         "username": SSH_USER,
         "password": SSH_PASS,
         "secret": SSH_PASS,
-        "conn_timeout": 15,
+        "conn_timeout": 30, "global_delay_factor": 2,
     }
     o = r["oct"]
     comandos = [

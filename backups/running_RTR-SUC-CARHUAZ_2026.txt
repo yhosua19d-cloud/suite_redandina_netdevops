@@ -1,0 +1,107 @@
+Building configuration...
+
+Current configuration : 1397 bytes
+!
+! Last configuration change at 06:42:24 UTC Wed Nov 25 2026 by admin
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+!
+hostname RTR-SUC-CARHUAZ
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+no ip icmp rate-limit unreachable
+ip cef
+!
+!
+!
+!
+!
+!
+no ip domain lookup
+ip domain name redandina.local
+no ipv6 cef
+!
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+username admin privilege 15 secret 5 $1$/fDA$yNKlqOtVxk2N9UolG5H1P.
+!
+!
+ip tcp synwait-time 5
+ip ssh version 2
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback10
+ description Gestion_Carhuaz
+ ip address 10.3.10.1 255.255.255.255
+!
+interface Loopback20
+ description Clientes_Carhuaz
+ ip address 10.3.20.1 255.255.255.255
+!
+interface Loopback30
+ description Servicios_Carhuaz
+ ip address 10.3.30.1 255.255.255.255
+!
+interface FastEthernet0/0
+ ip address 192.168.1.3 255.255.255.0
+ duplex full
+!
+router ospf 1
+ router-id 3.3.3.3
+ network 10.3.10.1 0.0.0.0 area 0
+ network 10.3.20.1 0.0.0.0 area 0
+ network 10.3.30.1 0.0.0.0 area 0
+ network 192.168.1.0 0.0.0.255 area 0
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+!
+!
+control-plane
+!
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line vty 0 4
+ login local
+ transport input ssh
+!
+!
+end
